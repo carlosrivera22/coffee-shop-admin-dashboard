@@ -183,13 +183,6 @@ export default function Orders() {
                             >
                                 Pending ({statusCounts.pending})
                             </Button>
-                            <Button
-                                variant={status === 'processing' ? 'default' : 'outline'}
-                                onClick={() => setStatus('processing')}
-                                className={status === 'processing' ? 'bg-amber-600 hover:bg-amber-700' : ''}
-                            >
-                                Processing ({statusCounts.processing})
-                            </Button>
                         </div>
                     </div>
                 </CardContent>

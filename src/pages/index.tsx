@@ -142,10 +142,6 @@ export default function Dashboard() {
       <Card className="mb-8">
         <CardHeader className="pb-0">
           <div className="flex items-center justify-between">
-            <div>
-              <CardTitle>Sales Overview</CardTitle>
-              <p className="text-sm text-gray-500">Daily revenue for the past week</p>
-            </div>
             <div className="flex space-x-2">
               <Button
                 variant={activeTimeFilter === 'day' ? 'default' : 'outline'}
@@ -170,14 +166,6 @@ export default function Dashboard() {
                 className={activeTimeFilter === 'month' ? 'bg-slate-900' : ''}
               >
                 Month
-              </Button>
-              <Button
-                variant={activeTimeFilter === 'year' ? 'default' : 'outline'}
-                size="sm"
-                onClick={() => setActiveTimeFilter('year')}
-                className={activeTimeFilter === 'year' ? 'bg-slate-900' : ''}
-              >
-                Year
               </Button>
             </div>
           </div>
