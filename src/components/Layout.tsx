@@ -14,7 +14,6 @@ import {
     DollarSign,
     UserCircle,
     Menu,
-    X
 } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
@@ -79,15 +78,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                     <Coffee size={20} />
                 </div>
                 <h2 className="text-xl font-bold">Bean Brew</h2>
-                {isMobileView && (
-                    <Button
-                        variant="ghost"
-                        className="ml-auto text-gray-400 hover:text-white"
-                        onClick={closeSidebar}
-                    >
-                        <X size={24} />
-                    </Button>
-                )}
             </div>
 
             <div className="mx-4 my-4">
